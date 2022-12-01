@@ -4,9 +4,7 @@ from flask import request
 
 object = user_model()
 
-@app.route("/foodentry", methods=["POST"])
-def foodentry():
-    return object.foodentry(request.json)
+
 
 @app.route("/login", methods=["POST"])
 def loginapi():
@@ -27,5 +25,29 @@ def foodsearch():
 @app.route("/categoryfetch", methods=["POST"])
 def foodcategorydatafetch():
     return object.foodcategorydatafetch(request.json)
+
+#  REMAINING PLACE ORDER FUNCTIONS
+
+@app.route("/checkorderdetails", methods=["POST"])
+def checkorder():
+    return object.checkorder(request.json)
+
+@app.route("/orderedit", methods=["PUT"])
+def editorder():
+    return object.editorder(request.json)   
+
+
+@app.route("/todaysreport", methods=["POST"])
+def todayreport():
+    return object.todayreport(request.json)   
+
+@app.route("/foodentry", methods=["POST"])
+def foodentry():
+    return object.foodentry(request.json)
+
+
+
+
+
 
 
