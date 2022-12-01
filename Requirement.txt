@@ -1,0 +1,69 @@
+# 1 | Creating Virtual Environment & First Flask App | REST API with Python Flask 
+Learned From https://www.youtube.com/watch?v=ZCRqwez93R0
+pip install flask
+python -m venv venv
+$env:FLASK_APP="app"
+$env:FLASK_ENV="development"
+CREATED app.py file?
+$env:TEMPLATES_AUTO_RELOAD=1
+$env:FLASK_DEBUG=1
+
+# 2 | Preventing __pycache__ files from being created | REST API with Python Flask 
+Learned From https://www.youtube.com/watch?v=iuzUsLDUK3s
+$env:PYTHONDONTWRITEBYTECODE=1  
+No files were created
+
+#3 | Creating multiple files in Flask | REST API with Python Flask
+Learned From https://www.youtube.com/watch?v=qk6JRk9WTK4
+
+#4 | Creating packages in Flask Environment to segregate files 
+Learned From https://www.youtube.com/watch?v=7IRtdna4kl4
+
+#5 | Import all Modules from Python Package at once |
+Learned From https://www.youtube.com/watch?v=mDYS4UYEW6c
+
+#6 | Creating Controller Model Architecture in Flask 
+Learned From https://www.youtube.com/watch?v=h9lOm5YD-lg
+
+#8 | Creating Controller Model Architecture in Flask 
+Learned From https://www.youtube.com/watch?v=NMWb5ZlkXJg
+pip install mysql-connector-python
+problem faced solve https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment
+
+#9 | HTTP GET Method | CRUD Operations |
+Learned From https://www.youtube.com/watch?v=mhiczI6khww
+
+#10 | HTTP POST Method | CRUD Operations |
+Learned From https://www.youtube.com/watch?v=CFr0P3s2kWs
+
+#11 | HTTP PUT Method | CRUD Operations 
+Learned From https://www.youtube.com/watch?v=l3ua7EWUHJg
+
+#13 | Generating JSON Response in Flask | REST API with Python Flask | HINDI
+https://www.youtube.com/watch?v=CI9KPl5wQTg&list=PLqIb7mt_Xhs4XUSBbxZWGqAYsXWcJ8n2N&index=14
+SENDING DATA AS JSON
+        #  return json.dumps(result) #json.dumps() to turn into string
+          //  return {"USERDetails": result}
+
+
+#14 | make_response() method and http response code | REST API with Python Flask | HINDI
+https://www.youtube.com/watch?v=AA-bIO41kBE&list=PLqIb7mt_Xhs4XUSBbxZWGqAYsXWcJ8n2N&index=15
+
+from flask import make_response
+ return make_response({"USERDetails": result}, 200)
+
+#15 | HTTP Response Headers | Access Control Allow Origin | REST API with Python Flask | HINDI
+https://www.youtube.com/watch?v=DYj6TzVZz98&list=PLqIb7mt_Xhs4XUSBbxZWGqAYsXWcJ8n2N&index=16
+            res = make_response({"USERDetails": result},200)
+            res.headers['Access-Control-Allow-Origin']="*"
+            return res
+
+#16 | PATCH Method | PATCH REST API | REST API with Python Flask | HINDI
+https://www.youtube.com/watch?v=lm_2oDR1fp4&list=PLqIb7mt_Xhs4XUSBbxZWGqAYsXWcJ8n2N&index=17
+
+Very Important
+#20 | Database Structure for JWT Authentication in Flask | Authentication vs Authorization 
+https://www.youtube.com/watch?v=BuzAjaDt0pc&t=106s
+
+
+$env:FLASK_APP="app";$env:FLASK_ENV="production";$env:TEMPLATES_AUTO_RELOAD=1;$env:PYTHONDONTWRITEBYTECODE=1;$env:FLASK_DEBUG=1;flask run
